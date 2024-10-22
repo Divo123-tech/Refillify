@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Refillify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              title: ['"Newsreader"', "sans-serif"],
+            },
+            colors: {
+              darkGreen: "#426B1F",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="flex px-20 py-8 flex items-center">
+      <h1 class="text-2xl font-serif text-[#426B1F]">World Peas</h1>
+      <div class="flex ml-auto gap-16 items-center">
+        <a href="shop.html"><p class="cursor-pointer">Shop</p></a>
+
+        <p class="cursor-pointer">News Stand</p>
+        <p class="cursor-pointer">Who We Are</p>
+        <p class="cursor-pointer">My profile</p>
+        <a href="basket.html"
+          ><button class="px-6 py-2 rounded-md bg-[#426B1F] text-white">
+            Basket (3)
+          </button></a
+        >
+      </div>
+    </nav>
+    <main class="py-36 px-64 text-center">
+      <h1 class="text-6xl text-center font-title">
+        We’re <span class="italic">farmers, purveyors </span>, and
+        <span class="italic">eaters</span> of organically grown food.
+      </h1>
+      <button
+        class="bg-darkGreen rounded-md text-white px-6 py-2 text-lg mt-16 font-semibold"
+      >
+        Browse Our Shop
+      </button>
+    </main>
+    <div class="flex py-16 pl-16 justify-between items-center">
+      <img src="assets/homeImg1.png" />
+      <div>
+        <img src="assets/homeImg2.png" />
+        <p class="font-light">
+          <span class="font-bold">Central California</span> — The person who
+          grew these was located in Central California and, er, hopefully very
+          <br />
+          well-compensated.
+        </p>
+      </div>
+    </div>
+    <div class="px-16 flex gap-32">
+      <div><h1 class="font-bold w-36">WHAT WE BELIEVE</h1></div>
+      <div class="flex flex-col gap-8 w-3/5 pb-8">
+        <p>We believe in produce. Tasty produce. Produce like:</p>
+        <p>
+          Apples. Oranges. Limes. Lemons. Guavas. Carrots. Cucumbers. Jicamas.
+          Cauliflowers. Brussels sprouts. Shallots. Japanese eggplants.
+          Asparagus. Artichokes—Jerusalem artichokes, too. Radishes. Broccoli.
+          Baby broccoli. Broccolini. Bok choy. Scallions. Ginger. Cherries.
+          Raspberries. Cilantro. Parsley. Dill.
+        </p>
+        <p>What are we forgetting?</p>
+        <p>
+          Oh! Onions. Yams. Avocados. Lettuce. Arugula (to some, “rocket”).
+          Persian cucumbers, in addition to aforementioned “normal” cucumbers.
+          Artichokes. Zucchinis. Pumpkins. Squash (what some cultures call
+          pumpkins). Sweet potatoes and potato-potatoes. Jackfruit. Monk fruit.
+          Fruit of the Loom. Fruits of our labor (this website). Sorrel.
+          Pineapple. Mango. Gooseberries. Blackberries. Tomatoes. Heirloom
+          tomatoes. Beets. Chives. Corn. Endive. Escarole, which, we swear,
+          we’re vendors of organic produce, but if you asked us to describe what
+          escaroles are...
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

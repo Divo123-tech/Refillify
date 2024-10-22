@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Basket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              title: ['"Newsreader"', "sans-serif"],
+            },
+            colors: {
+              darkGreen: "#426B1F",
+              card: "#FAFAF5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="flex px-20 py-8 flex">
+      <a href="index.html"><img src="assets/logo.png" alt="Logo" /></a>
+
+      <div class="flex ml-auto gap-16">
+        <a href="shop.html"><p class="cursor-pointer">Shop</p></a>
+        <p class="cursor-pointer">News Stand</p>
+        <p class="cursor-pointer">Who We Are</p>
+        <p class="cursor-pointer">My profile</p>
+        <a href="basket.html"
+          ><p
+            class="rounded-md bg-[#426B1F] text-white h-10 mt-[-7px] px-6 pt-[7px] cursor-pointer"
+          >
+            Basket (3)
+          </p>
+        </a>
+      </div>
+    </nav>
+    <div class="px-20 flex gap-8 items-end">
+      <h1 class="font-title text-5xl">Household</h1>
+      <div class="ml-auto flex gap-4">
+        <button class="bg-darkGreen text-white rounded-full px-4 py-1 text-sm">
+          Default
+        </button>
+        <button class="border-gray-200 border-2 rounded-full px-4 py-1 text-sm">
+          A-Z
+        </button>
+        <button class="border-gray-200 border-2 rounded-full px-4 py-1 text-sm">
+          List View
+        </button>
+      </div>
+    </div>
+    <div class="px-20 pt-4 text-[#E6E6E6]">
+      <hr />
+    </div>
+    <div class="flex px-20 py-8 gap-8">
+      <div class="bg-card rounded-xl border-2 border-gray-200">
+        <img src="assets/Household1.png" class="rounded-t-xl" />
+        <div class="px-4 py-4">
+          <p class="font-bold text-lg">Heirloom Tomato</p>
+          <p class="text-darkGreen font-semibold">$5.99 / lb</p>
+          <p class="text-gray-400 text-sm mt-4">
+            Grown in San Juan Capistrano, CA
+          </p>
+        </div>
+      </div>
+      <div class="bg-card rounded-xl border-2 border-gray-200">
+        <img src="assets/Household2.png" class="rounded-t-xl" />
+        <div class="px-4 py-4">
+          <p class="font-bold text-lg">Organic Ginger</p>
+          <p class="text-darkGreen font-semibold">$12.99 / lb</p>
+          <p class="text-gray-400 text-sm mt-4">
+            Grown in Huntington Beach, CA
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
